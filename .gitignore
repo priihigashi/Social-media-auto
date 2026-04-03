@@ -1,0 +1,20 @@
+# Environment
+.env
+
+# Credentials (never commit service account keys)
+credentials/*.json
+
+# Output clips
+clips/*/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# OS
+.DS_Store
