@@ -1,0 +1,104 @@
+name: Capture Pipeline v2
+
+# ─── TRIGGER ───────────────────────────────────────────────────────────────
+# Trigger this from your phone via the GitHub mobile app:
+# Repo → Actions → Capture Pipeline v2 → Run workflow
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL of the reel (Instagram, TikTok, YouTube)"
+        required: true
+        type: string
+      project:
+        description: "Pipeline — book (fact-check), sovereign (political), content (Oak Park)"
+        required: true
+        default: "book"
+        type: choice
+        options:
+          - book
+          - sovereign
+          - content
+      story_id:
+        description: "Story ID (e.g. BCI-002, SVG-001) — leave blank to auto-generate"
+        required: false
+        type: string
+        default: ""
+      notes:
+        description: "Additional context or notes"
+        required: false
+        type: string
+        default: ""
+
+# ─── JOB ───────────────────────────────────────────────────────────────────
+jobs:
+  capture:
+    name: "Capture — ${{ inputs.project }} — ${{ inputs.story_id || 'auto-id' }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      # 1. Checkout the pipeline branch
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: claude/video-curation-pipeline-g1AoL
+
+      # 2. Python setup
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. System deps — ffmpeg required by yt-dlp for audio conversion
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+
+      # 4. Python deps
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # 5. Write service account JSON from secret
+      - name: Set up Google credentials
+        run: |
+          mkdir -p credentials
+          echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" | base64 -d > credentials/service_account.json
+
+      # 6. Run the capture pipeline
+      - name: Run capture
+        env:
+          OPENAI_API_KEY:                  ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY:               ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_JSON:     ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SHEETS_BOOK_TRACKER_ID:   ${{ secrets.GOOGLE_SHEETS_BOOK_TRACKER_ID }}
+          GOOGLE_SHEETS_IDEAS_INBOX_ID:    ${{ secrets.GOOGLE_SHEETS_IDEAS_INBOX_ID }}
+          GOOGLE_DRIVE_BOOK_FOLDER_ID:     ${{ secrets.GOOGLE_DRIVE_BOOK_FOLDER_ID }}
+          GOOGLE_DRIVE_SOVEREIGN_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_SOVEREIGN_FOLDER_ID }}
+        run: |
+          # Build command — add optional flags only if provided
+          CMD="python capture.py \"${{ inputs.url }}\" --project ${{ inputs.project }}"
+
+          STORY_ID="${{ inputs.story_id }}"
+          if [ -n "$STORY_ID" ]; then
+            CMD="$CMD --story-id \"$STORY_ID\""
+          fi
+
+          NOTES="${{ inputs.notes }}"
+          if [ -n "$NOTES" ]; then
+            CMD="$CMD --notes \"$NOTES\""
+          fi
+
+          echo "Running: $CMD"
+          eval $CMD
+
+      # 7. Upload transcripts + analysis as artifacts (kept 30 days)
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "capture-${{ inputs.story_id || github.run_id }}-${{ inputs.project }}"
+          path: transcripts/
+          retention-days: 30
