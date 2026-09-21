@@ -1,4 +1,4 @@
-name: VOTOS POST TSE — timestamped capture
+name: VOTOS POST TSE — transcript verification pass
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements.txt
           pip install faster-whisper
 
-      - name: Download with existing pipeline and transcribe locally with timestamps
+      - name: Second-pass transcription with a larger local model
         run: |
           python - <<'PY'
           import json
@@ -59,7 +59,7 @@ jobs:
 
           with tempfile.TemporaryDirectory() as tmp:
               audio = download_audio(url, tmp)
-              model = WhisperModel("small", device="cpu", compute_type="int8")
+              model = WhisperModel("medium", device="cpu", compute_type="int8")
               segments_iter, info = model.transcribe(
                   audio,
                   language="pt",
@@ -91,7 +91,7 @@ jobs:
           payload = {
               "source_url": url,
               "story_id": story_id,
-              "engine": "faster-whisper small (local GitHub Actions fallback)",
+              "engine": "faster-whisper medium (independent verification pass)",
               "language": getattr(info, "language", "pt"),
               "language_probability": getattr(info, "language_probability", None),
               "duration": getattr(info, "duration", None),
@@ -101,15 +101,15 @@ jobs:
               "words": words_json,
           }
 
-          (out / f"{story_id}_Ddi7PIlxRaj_verbose.json").write_text(
+          (out / f"{story_id}_Ddi7PIlxRaj_medium_verbose.json").write_text(
               json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
           )
 
           lines = [
-              "TRANSCRIPT — MACHINE GENERATED",
+              "TRANSCRIPT — SECOND VERIFICATION PASS",
               f"Story ID: {story_id}",
               f"Source: {url}",
-              "Engine: faster-whisper small (local fallback because API secret is not configured in this repo)",
+              "Engine: faster-whisper medium",
               "",
               "EDITORIAL GUIDANCE",
               editorial_notes,
@@ -125,15 +125,15 @@ jobs:
           for w in words_json:
               lines.append(f"[{float(w['start']):07.2f}–{float(w['end']):07.2f}] {w['word'].strip()}")
 
-          (out / f"{story_id}_Ddi7PIlxRaj_timestamped.txt").write_text(
+          (out / f"{story_id}_Ddi7PIlxRaj_medium_timestamped.txt").write_text(
               "\n".join(lines), encoding="utf-8"
           )
           PY
 
-      - name: Commit timestamped transcript to project branch
+      - name: Commit verification transcript to project branch
         run: |
           git config user.name "content-capture-bot"
           git config user.email "content-capture-bot@users.noreply.github.com"
-          git add transcripts/NWS-202609211446_Ddi7PIlxRaj_*
-          git commit -m "capture: timestamp VOTOS POST TSE reel [skip ci]"
+          git add transcripts/NWS-202609211446_Ddi7PIlxRaj_medium_*
+          git commit -m "capture: verify VOTOS POST TSE transcript with medium model [skip ci]"
           git push origin HEAD:work/votos-post-tse-20260921
