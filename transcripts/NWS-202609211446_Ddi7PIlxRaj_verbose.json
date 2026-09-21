@@ -1,0 +1,1789 @@
+{
+  "source_url": "https://www.instagram.com/reel/Ddi7PIlxRaj/",
+  "story_id": "NWS-202609211446",
+  "engine": "faster-whisper small (local GitHub Actions fallback)",
+  "language": "pt",
+  "language_probability": 1,
+  "duration": 48.8794375,
+  "editorial_notes": "Brazil political fact-check carousel about voting by provisional detainees, the TSE ruling, Constitution art. 16 annuality, Andre Mendonca pedido de vista, unanimity, Lei Antifaccao/Lei 15.358/2026, and the relevant congressional vote. Use the source transcript before editorial conclusions; neutral factual tone; draft only, not approved or published.",
+  "text": "O Brasil é o país que anda para trás mesmo, não tem jeito, viu? TSE decidiu que presos provisórios agora vão poder votar nessa eleição desse ano. E aqui tem um detalhe importante, o Congresso aprova o Mano Barrega e pedindo o voto de quem estava preso provisoriamente. Só que TSE decidiu agora que essa mudança não poderá valer agora, porque a lei foi aprovada a menos de um ano da eleição, né? Resultado, em 2026, continua a regra anterior. E aí tem um dado que chama atenção, quer que você peça atenção nisso. Na última eleição, o Lula ganhou nos presídios com mais de 80% dos votos, contra 15% do Bolsonaro. Isso mostra algum manobra, não sei, só tá trazendo um dado, uma informação aqui. A decisão do TSE é jurídica, mas a discussão que é outra, uma regra aprovada no Congresso, pelo Congresso deveria ou não valer nessa eleição? Por mim, eu acho que deveria. E isso tá bem estranho essa informação, né?",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.32,
+      "text": "O Brasil é o país que anda para trás mesmo, não tem jeito, viu?",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.18,
+          "word": " O"
+        },
+        {
+          "start": 0.18,
+          "end": 0.36,
+          "word": " Brasil"
+        },
+        {
+          "start": 0.36,
+          "end": 0.6,
+          "word": " é"
+        },
+        {
+          "start": 0.6,
+          "end": 0.6,
+          "word": " o"
+        },
+        {
+          "start": 0.6,
+          "end": 0.8,
+          "word": " país"
+        },
+        {
+          "start": 0.8,
+          "end": 0.98,
+          "word": " que"
+        },
+        {
+          "start": 0.98,
+          "end": 1.1,
+          "word": " anda"
+        },
+        {
+          "start": 1.1,
+          "end": 1.24,
+          "word": " para"
+        },
+        {
+          "start": 1.24,
+          "end": 1.5,
+          "word": " trás"
+        },
+        {
+          "start": 1.5,
+          "end": 1.64,
+          "word": " mesmo,"
+        },
+        {
+          "start": 1.72,
+          "end": 1.86,
+          "word": " não"
+        },
+        {
+          "start": 1.86,
+          "end": 1.94,
+          "word": " tem"
+        },
+        {
+          "start": 1.94,
+          "end": 2.18,
+          "word": " jeito,"
+        },
+        {
+          "start": 2.32,
+          "end": 2.32,
+          "word": " viu?"
+        }
+      ]
+    },
+    {
+      "start": 2.54,
+      "end": 7.7,
+      "text": "TSE decidiu que presos provisórios agora vão poder votar nessa eleição desse ano.",
+      "words": [
+        {
+          "start": 2.54,
+          "end": 2.8,
+          "word": " TSE"
+        },
+        {
+          "start": 2.8,
+          "end": 3.28,
+          "word": " decidiu"
+        },
+        {
+          "start": 3.28,
+          "end": 3.44,
+          "word": " que"
+        },
+        {
+          "start": 3.44,
+          "end": 3.9,
+          "word": " presos"
+        },
+        {
+          "start": 3.9,
+          "end": 4.5,
+          "word": " provisórios"
+        },
+        {
+          "start": 4.5,
+          "end": 4.86,
+          "word": " agora"
+        },
+        {
+          "start": 4.86,
+          "end": 5.24,
+          "word": " vão"
+        },
+        {
+          "start": 5.24,
+          "end": 5.6,
+          "word": " poder"
+        },
+        {
+          "start": 5.6,
+          "end": 6.36,
+          "word": " votar"
+        },
+        {
+          "start": 6.36,
+          "end": 6.7,
+          "word": " nessa"
+        },
+        {
+          "start": 6.7,
+          "end": 7.02,
+          "word": " eleição"
+        },
+        {
+          "start": 7.02,
+          "end": 7.32,
+          "word": " desse"
+        },
+        {
+          "start": 7.32,
+          "end": 7.7,
+          "word": " ano."
+        }
+      ]
+    },
+    {
+      "start": 7.78,
+      "end": 10.2,
+      "text": "E aqui tem um detalhe importante, o Congresso aprova o Mano Barrega",
+      "words": [
+        {
+          "start": 7.78,
+          "end": 7.8,
+          "word": " E"
+        },
+        {
+          "start": 7.8,
+          "end": 7.9,
+          "word": " aqui"
+        },
+        {
+          "start": 7.9,
+          "end": 7.98,
+          "word": " tem"
+        },
+        {
+          "start": 7.98,
+          "end": 8.04,
+          "word": " um"
+        },
+        {
+          "start": 8.04,
+          "end": 8.18,
+          "word": " detalhe"
+        },
+        {
+          "start": 8.18,
+          "end": 8.64,
+          "word": " importante,"
+        },
+        {
+          "start": 8.9,
+          "end": 9.0,
+          "word": " o"
+        },
+        {
+          "start": 9.0,
+          "end": 9.3,
+          "word": " Congresso"
+        },
+        {
+          "start": 9.3,
+          "end": 9.58,
+          "word": " aprova"
+        },
+        {
+          "start": 9.58,
+          "end": 9.7,
+          "word": " o"
+        },
+        {
+          "start": 9.7,
+          "end": 9.84,
+          "word": " Mano"
+        },
+        {
+          "start": 9.84,
+          "end": 10.2,
+          "word": " Barrega"
+        }
+      ]
+    },
+    {
+      "start": 10.2,
+      "end": 12.72,
+      "text": "e pedindo o voto de quem estava preso provisoriamente.",
+      "words": [
+        {
+          "start": 10.2,
+          "end": 10.54,
+          "word": " e"
+        },
+        {
+          "start": 10.54,
+          "end": 10.84,
+          "word": " pedindo"
+        },
+        {
+          "start": 10.84,
+          "end": 10.96,
+          "word": " o"
+        },
+        {
+          "start": 10.96,
+          "end": 11.2,
+          "word": " voto"
+        },
+        {
+          "start": 11.2,
+          "end": 11.32,
+          "word": " de"
+        },
+        {
+          "start": 11.32,
+          "end": 11.5,
+          "word": " quem"
+        },
+        {
+          "start": 11.5,
+          "end": 11.7,
+          "word": " estava"
+        },
+        {
+          "start": 11.7,
+          "end": 12.02,
+          "word": " preso"
+        },
+        {
+          "start": 12.02,
+          "end": 12.72,
+          "word": " provisoriamente."
+        }
+      ]
+    },
+    {
+      "start": 13.06,
+      "end": 16.84,
+      "text": "Só que TSE decidiu agora que essa mudança não poderá valer agora,",
+      "words": [
+        {
+          "start": 13.06,
+          "end": 13.2,
+          "word": " Só"
+        },
+        {
+          "start": 13.2,
+          "end": 13.3,
+          "word": " que"
+        },
+        {
+          "start": 13.3,
+          "end": 13.56,
+          "word": " TSE"
+        },
+        {
+          "start": 13.56,
+          "end": 14.04,
+          "word": " decidiu"
+        },
+        {
+          "start": 14.04,
+          "end": 14.36,
+          "word": " agora"
+        },
+        {
+          "start": 14.36,
+          "end": 14.88,
+          "word": " que"
+        },
+        {
+          "start": 14.88,
+          "end": 15.02,
+          "word": " essa"
+        },
+        {
+          "start": 15.02,
+          "end": 15.38,
+          "word": " mudança"
+        },
+        {
+          "start": 15.38,
+          "end": 15.58,
+          "word": " não"
+        },
+        {
+          "start": 15.58,
+          "end": 15.92,
+          "word": " poderá"
+        },
+        {
+          "start": 15.92,
+          "end": 16.2,
+          "word": " valer"
+        },
+        {
+          "start": 16.2,
+          "end": 16.84,
+          "word": " agora,"
+        }
+      ]
+    },
+    {
+      "start": 17.12,
+      "end": 20.88,
+      "text": "porque a lei foi aprovada a menos de um ano da eleição, né?",
+      "words": [
+        {
+          "start": 17.12,
+          "end": 17.3,
+          "word": " porque"
+        },
+        {
+          "start": 17.3,
+          "end": 17.44,
+          "word": " a"
+        },
+        {
+          "start": 17.44,
+          "end": 17.56,
+          "word": " lei"
+        },
+        {
+          "start": 17.56,
+          "end": 17.9,
+          "word": " foi"
+        },
+        {
+          "start": 17.9,
+          "end": 18.36,
+          "word": " aprovada"
+        },
+        {
+          "start": 18.36,
+          "end": 18.74,
+          "word": " a"
+        },
+        {
+          "start": 18.74,
+          "end": 18.96,
+          "word": " menos"
+        },
+        {
+          "start": 18.96,
+          "end": 19.22,
+          "word": " de"
+        },
+        {
+          "start": 19.22,
+          "end": 19.32,
+          "word": " um"
+        },
+        {
+          "start": 19.32,
+          "end": 19.54,
+          "word": " ano"
+        },
+        {
+          "start": 19.54,
+          "end": 19.7,
+          "word": " da"
+        },
+        {
+          "start": 19.7,
+          "end": 20.68,
+          "word": " eleição,"
+        },
+        {
+          "start": 20.76,
+          "end": 20.88,
+          "word": " né?"
+        }
+      ]
+    },
+    {
+      "start": 21.42,
+      "end": 23.86,
+      "text": "Resultado, em 2026, continua a regra anterior.",
+      "words": [
+        {
+          "start": 21.42,
+          "end": 21.86,
+          "word": " Resultado,"
+        },
+        {
+          "start": 22.0,
+          "end": 22.06,
+          "word": " em"
+        },
+        {
+          "start": 22.06,
+          "end": 22.8,
+          "word": " 2026,"
+        },
+        {
+          "start": 22.92,
+          "end": 23.2,
+          "word": " continua"
+        },
+        {
+          "start": 23.2,
+          "end": 23.42,
+          "word": " a"
+        },
+        {
+          "start": 23.42,
+          "end": 23.58,
+          "word": " regra"
+        },
+        {
+          "start": 23.58,
+          "end": 23.86,
+          "word": " anterior."
+        }
+      ]
+    },
+    {
+      "start": 24.18,
+      "end": 26.32,
+      "text": "E aí tem um dado que chama atenção, quer que você peça atenção nisso.",
+      "words": [
+        {
+          "start": 24.18,
+          "end": 24.22,
+          "word": " E"
+        },
+        {
+          "start": 24.22,
+          "end": 24.32,
+          "word": " aí"
+        },
+        {
+          "start": 24.32,
+          "end": 24.42,
+          "word": " tem"
+        },
+        {
+          "start": 24.42,
+          "end": 24.52,
+          "word": " um"
+        },
+        {
+          "start": 24.52,
+          "end": 24.62,
+          "word": " dado"
+        },
+        {
+          "start": 24.62,
+          "end": 24.82,
+          "word": " que"
+        },
+        {
+          "start": 24.82,
+          "end": 24.94,
+          "word": " chama"
+        },
+        {
+          "start": 24.94,
+          "end": 25.34,
+          "word": " atenção,"
+        },
+        {
+          "start": 25.44,
+          "end": 25.48,
+          "word": " quer"
+        },
+        {
+          "start": 25.48,
+          "end": 25.56,
+          "word": " que"
+        },
+        {
+          "start": 25.56,
+          "end": 25.62,
+          "word": " você"
+        },
+        {
+          "start": 25.62,
+          "end": 25.76,
+          "word": " peça"
+        },
+        {
+          "start": 25.76,
+          "end": 26.02,
+          "word": " atenção"
+        },
+        {
+          "start": 26.02,
+          "end": 26.32,
+          "word": " nisso."
+        }
+      ]
+    },
+    {
+      "start": 26.32,
+      "end": 30.72,
+      "text": "Na última eleição, o Lula ganhou nos presídios com mais de 80% dos votos,",
+      "words": [
+        {
+          "start": 26.32,
+          "end": 27.06,
+          "word": " Na"
+        },
+        {
+          "start": 27.06,
+          "end": 27.24,
+          "word": " última"
+        },
+        {
+          "start": 27.24,
+          "end": 27.62,
+          "word": " eleição,"
+        },
+        {
+          "start": 27.82,
+          "end": 27.9,
+          "word": " o"
+        },
+        {
+          "start": 27.9,
+          "end": 28.08,
+          "word": " Lula"
+        },
+        {
+          "start": 28.08,
+          "end": 28.34,
+          "word": " ganhou"
+        },
+        {
+          "start": 28.34,
+          "end": 28.46,
+          "word": " nos"
+        },
+        {
+          "start": 28.46,
+          "end": 28.88,
+          "word": " presídios"
+        },
+        {
+          "start": 28.88,
+          "end": 29.0,
+          "word": " com"
+        },
+        {
+          "start": 29.0,
+          "end": 29.14,
+          "word": " mais"
+        },
+        {
+          "start": 29.14,
+          "end": 29.24,
+          "word": " de"
+        },
+        {
+          "start": 29.24,
+          "end": 29.68,
+          "word": " 80"
+        },
+        {
+          "start": 29.68,
+          "end": 30.08,
+          "word": "%"
+        },
+        {
+          "start": 30.08,
+          "end": 30.34,
+          "word": " dos"
+        },
+        {
+          "start": 30.34,
+          "end": 30.72,
+          "word": " votos,"
+        }
+      ]
+    },
+    {
+      "start": 30.76,
+      "end": 32.36,
+      "text": "contra 15% do Bolsonaro.",
+      "words": [
+        {
+          "start": 30.76,
+          "end": 30.9,
+          "word": " contra"
+        },
+        {
+          "start": 30.9,
+          "end": 31.22,
+          "word": " 15"
+        },
+        {
+          "start": 31.22,
+          "end": 31.66,
+          "word": "%"
+        },
+        {
+          "start": 31.66,
+          "end": 31.88,
+          "word": " do"
+        },
+        {
+          "start": 31.88,
+          "end": 32.36,
+          "word": " Bolsonaro."
+        }
+      ]
+    },
+    {
+      "start": 33.02,
+      "end": 37.02,
+      "text": "Isso mostra algum manobra, não sei, só tá trazendo um dado, uma informação aqui.",
+      "words": [
+        {
+          "start": 33.02,
+          "end": 33.34,
+          "word": " Isso"
+        },
+        {
+          "start": 33.34,
+          "end": 33.88,
+          "word": " mostra"
+        },
+        {
+          "start": 33.88,
+          "end": 34.12,
+          "word": " algum"
+        },
+        {
+          "start": 34.12,
+          "end": 34.5,
+          "word": " manobra,"
+        },
+        {
+          "start": 34.64,
+          "end": 34.72,
+          "word": " não"
+        },
+        {
+          "start": 34.72,
+          "end": 35.02,
+          "word": " sei,"
+        },
+        {
+          "start": 35.2,
+          "end": 35.34,
+          "word": " só"
+        },
+        {
+          "start": 35.34,
+          "end": 35.46,
+          "word": " tá"
+        },
+        {
+          "start": 35.46,
+          "end": 35.82,
+          "word": " trazendo"
+        },
+        {
+          "start": 35.82,
+          "end": 35.94,
+          "word": " um"
+        },
+        {
+          "start": 35.94,
+          "end": 36.14,
+          "word": " dado,"
+        },
+        {
+          "start": 36.28,
+          "end": 36.34,
+          "word": " uma"
+        },
+        {
+          "start": 36.34,
+          "end": 36.64,
+          "word": " informação"
+        },
+        {
+          "start": 36.64,
+          "end": 37.02,
+          "word": " aqui."
+        }
+      ]
+    },
+    {
+      "start": 37.44,
+      "end": 40.12,
+      "text": "A decisão do TSE é jurídica, mas a discussão que é outra,",
+      "words": [
+        {
+          "start": 37.44,
+          "end": 37.52,
+          "word": " A"
+        },
+        {
+          "start": 37.52,
+          "end": 37.88,
+          "word": " decisão"
+        },
+        {
+          "start": 37.88,
+          "end": 37.94,
+          "word": " do"
+        },
+        {
+          "start": 37.94,
+          "end": 38.3,
+          "word": " TSE"
+        },
+        {
+          "start": 38.3,
+          "end": 38.58,
+          "word": " é"
+        },
+        {
+          "start": 38.58,
+          "end": 39.14,
+          "word": " jurídica,"
+        },
+        {
+          "start": 39.2,
+          "end": 39.26,
+          "word": " mas"
+        },
+        {
+          "start": 39.26,
+          "end": 39.34,
+          "word": " a"
+        },
+        {
+          "start": 39.34,
+          "end": 39.62,
+          "word": " discussão"
+        },
+        {
+          "start": 39.62,
+          "end": 39.76,
+          "word": " que"
+        },
+        {
+          "start": 39.76,
+          "end": 39.84,
+          "word": " é"
+        },
+        {
+          "start": 39.84,
+          "end": 40.12,
+          "word": " outra,"
+        }
+      ]
+    },
+    {
+      "start": 40.48,
+      "end": 44.8,
+      "text": "uma regra aprovada no Congresso, pelo Congresso deveria ou não valer nessa eleição?",
+      "words": [
+        {
+          "start": 40.48,
+          "end": 40.6,
+          "word": " uma"
+        },
+        {
+          "start": 40.6,
+          "end": 40.88,
+          "word": " regra"
+        },
+        {
+          "start": 40.88,
+          "end": 41.4,
+          "word": " aprovada"
+        },
+        {
+          "start": 41.4,
+          "end": 41.56,
+          "word": " no"
+        },
+        {
+          "start": 41.56,
+          "end": 42.2,
+          "word": " Congresso,"
+        },
+        {
+          "start": 42.48,
+          "end": 42.64,
+          "word": " pelo"
+        },
+        {
+          "start": 42.64,
+          "end": 43.0,
+          "word": " Congresso"
+        },
+        {
+          "start": 43.0,
+          "end": 43.52,
+          "word": " deveria"
+        },
+        {
+          "start": 43.52,
+          "end": 43.8,
+          "word": " ou"
+        },
+        {
+          "start": 43.8,
+          "end": 43.98,
+          "word": " não"
+        },
+        {
+          "start": 43.98,
+          "end": 44.28,
+          "word": " valer"
+        },
+        {
+          "start": 44.28,
+          "end": 44.46,
+          "word": " nessa"
+        },
+        {
+          "start": 44.46,
+          "end": 44.8,
+          "word": " eleição?"
+        }
+      ]
+    },
+    {
+      "start": 45.24,
+      "end": 46.26,
+      "text": "Por mim, eu acho que deveria.",
+      "words": [
+        {
+          "start": 45.24,
+          "end": 45.24,
+          "word": " Por"
+        },
+        {
+          "start": 45.24,
+          "end": 45.44,
+          "word": " mim,"
+        },
+        {
+          "start": 45.54,
+          "end": 45.62,
+          "word": " eu"
+        },
+        {
+          "start": 45.62,
+          "end": 45.8,
+          "word": " acho"
+        },
+        {
+          "start": 45.8,
+          "end": 45.86,
+          "word": " que"
+        },
+        {
+          "start": 45.86,
+          "end": 46.26,
+          "word": " deveria."
+        }
+      ]
+    },
+    {
+      "start": 46.54,
+      "end": 48.5,
+      "text": "E isso tá bem estranho essa informação, né?",
+      "words": [
+        {
+          "start": 46.54,
+          "end": 46.6,
+          "word": " E"
+        },
+        {
+          "start": 46.6,
+          "end": 46.72,
+          "word": " isso"
+        },
+        {
+          "start": 46.72,
+          "end": 47.18,
+          "word": " tá"
+        },
+        {
+          "start": 47.18,
+          "end": 47.48,
+          "word": " bem"
+        },
+        {
+          "start": 47.48,
+          "end": 47.82,
+          "word": " estranho"
+        },
+        {
+          "start": 47.82,
+          "end": 47.88,
+          "word": " essa"
+        },
+        {
+          "start": 47.88,
+          "end": 48.14,
+          "word": " informação,"
+        },
+        {
+          "start": 48.42,
+          "end": 48.5,
+          "word": " né?"
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "start": 0.0,
+      "end": 0.18,
+      "word": " O"
+    },
+    {
+      "start": 0.18,
+      "end": 0.36,
+      "word": " Brasil"
+    },
+    {
+      "start": 0.36,
+      "end": 0.6,
+      "word": " é"
+    },
+    {
+      "start": 0.6,
+      "end": 0.6,
+      "word": " o"
+    },
+    {
+      "start": 0.6,
+      "end": 0.8,
+      "word": " país"
+    },
+    {
+      "start": 0.8,
+      "end": 0.98,
+      "word": " que"
+    },
+    {
+      "start": 0.98,
+      "end": 1.1,
+      "word": " anda"
+    },
+    {
+      "start": 1.1,
+      "end": 1.24,
+      "word": " para"
+    },
+    {
+      "start": 1.24,
+      "end": 1.5,
+      "word": " trás"
+    },
+    {
+      "start": 1.5,
+      "end": 1.64,
+      "word": " mesmo,"
+    },
+    {
+      "start": 1.72,
+      "end": 1.86,
+      "word": " não"
+    },
+    {
+      "start": 1.86,
+      "end": 1.94,
+      "word": " tem"
+    },
+    {
+      "start": 1.94,
+      "end": 2.18,
+      "word": " jeito,"
+    },
+    {
+      "start": 2.32,
+      "end": 2.32,
+      "word": " viu?"
+    },
+    {
+      "start": 2.54,
+      "end": 2.8,
+      "word": " TSE"
+    },
+    {
+      "start": 2.8,
+      "end": 3.28,
+      "word": " decidiu"
+    },
+    {
+      "start": 3.28,
+      "end": 3.44,
+      "word": " que"
+    },
+    {
+      "start": 3.44,
+      "end": 3.9,
+      "word": " presos"
+    },
+    {
+      "start": 3.9,
+      "end": 4.5,
+      "word": " provisórios"
+    },
+    {
+      "start": 4.5,
+      "end": 4.86,
+      "word": " agora"
+    },
+    {
+      "start": 4.86,
+      "end": 5.24,
+      "word": " vão"
+    },
+    {
+      "start": 5.24,
+      "end": 5.6,
+      "word": " poder"
+    },
+    {
+      "start": 5.6,
+      "end": 6.36,
+      "word": " votar"
+    },
+    {
+      "start": 6.36,
+      "end": 6.7,
+      "word": " nessa"
+    },
+    {
+      "start": 6.7,
+      "end": 7.02,
+      "word": " eleição"
+    },
+    {
+      "start": 7.02,
+      "end": 7.32,
+      "word": " desse"
+    },
+    {
+      "start": 7.32,
+      "end": 7.7,
+      "word": " ano."
+    },
+    {
+      "start": 7.78,
+      "end": 7.8,
+      "word": " E"
+    },
+    {
+      "start": 7.8,
+      "end": 7.9,
+      "word": " aqui"
+    },
+    {
+      "start": 7.9,
+      "end": 7.98,
+      "word": " tem"
+    },
+    {
+      "start": 7.98,
+      "end": 8.04,
+      "word": " um"
+    },
+    {
+      "start": 8.04,
+      "end": 8.18,
+      "word": " detalhe"
+    },
+    {
+      "start": 8.18,
+      "end": 8.64,
+      "word": " importante,"
+    },
+    {
+      "start": 8.9,
+      "end": 9.0,
+      "word": " o"
+    },
+    {
+      "start": 9.0,
+      "end": 9.3,
+      "word": " Congresso"
+    },
+    {
+      "start": 9.3,
+      "end": 9.58,
+      "word": " aprova"
+    },
+    {
+      "start": 9.58,
+      "end": 9.7,
+      "word": " o"
+    },
+    {
+      "start": 9.7,
+      "end": 9.84,
+      "word": " Mano"
+    },
+    {
+      "start": 9.84,
+      "end": 10.2,
+      "word": " Barrega"
+    },
+    {
+      "start": 10.2,
+      "end": 10.54,
+      "word": " e"
+    },
+    {
+      "start": 10.54,
+      "end": 10.84,
+      "word": " pedindo"
+    },
+    {
+      "start": 10.84,
+      "end": 10.96,
+      "word": " o"
+    },
+    {
+      "start": 10.96,
+      "end": 11.2,
+      "word": " voto"
+    },
+    {
+      "start": 11.2,
+      "end": 11.32,
+      "word": " de"
+    },
+    {
+      "start": 11.32,
+      "end": 11.5,
+      "word": " quem"
+    },
+    {
+      "start": 11.5,
+      "end": 11.7,
+      "word": " estava"
+    },
+    {
+      "start": 11.7,
+      "end": 12.02,
+      "word": " preso"
+    },
+    {
+      "start": 12.02,
+      "end": 12.72,
+      "word": " provisoriamente."
+    },
+    {
+      "start": 13.06,
+      "end": 13.2,
+      "word": " Só"
+    },
+    {
+      "start": 13.2,
+      "end": 13.3,
+      "word": " que"
+    },
+    {
+      "start": 13.3,
+      "end": 13.56,
+      "word": " TSE"
+    },
+    {
+      "start": 13.56,
+      "end": 14.04,
+      "word": " decidiu"
+    },
+    {
+      "start": 14.04,
+      "end": 14.36,
+      "word": " agora"
+    },
+    {
+      "start": 14.36,
+      "end": 14.88,
+      "word": " que"
+    },
+    {
+      "start": 14.88,
+      "end": 15.02,
+      "word": " essa"
+    },
+    {
+      "start": 15.02,
+      "end": 15.38,
+      "word": " mudança"
+    },
+    {
+      "start": 15.38,
+      "end": 15.58,
+      "word": " não"
+    },
+    {
+      "start": 15.58,
+      "end": 15.92,
+      "word": " poderá"
+    },
+    {
+      "start": 15.92,
+      "end": 16.2,
+      "word": " valer"
+    },
+    {
+      "start": 16.2,
+      "end": 16.84,
+      "word": " agora,"
+    },
+    {
+      "start": 17.12,
+      "end": 17.3,
+      "word": " porque"
+    },
+    {
+      "start": 17.3,
+      "end": 17.44,
+      "word": " a"
+    },
+    {
+      "start": 17.44,
+      "end": 17.56,
+      "word": " lei"
+    },
+    {
+      "start": 17.56,
+      "end": 17.9,
+      "word": " foi"
+    },
+    {
+      "start": 17.9,
+      "end": 18.36,
+      "word": " aprovada"
+    },
+    {
+      "start": 18.36,
+      "end": 18.74,
+      "word": " a"
+    },
+    {
+      "start": 18.74,
+      "end": 18.96,
+      "word": " menos"
+    },
+    {
+      "start": 18.96,
+      "end": 19.22,
+      "word": " de"
+    },
+    {
+      "start": 19.22,
+      "end": 19.32,
+      "word": " um"
+    },
+    {
+      "start": 19.32,
+      "end": 19.54,
+      "word": " ano"
+    },
+    {
+      "start": 19.54,
+      "end": 19.7,
+      "word": " da"
+    },
+    {
+      "start": 19.7,
+      "end": 20.68,
+      "word": " eleição,"
+    },
+    {
+      "start": 20.76,
+      "end": 20.88,
+      "word": " né?"
+    },
+    {
+      "start": 21.42,
+      "end": 21.86,
+      "word": " Resultado,"
+    },
+    {
+      "start": 22.0,
+      "end": 22.06,
+      "word": " em"
+    },
+    {
+      "start": 22.06,
+      "end": 22.8,
+      "word": " 2026,"
+    },
+    {
+      "start": 22.92,
+      "end": 23.2,
+      "word": " continua"
+    },
+    {
+      "start": 23.2,
+      "end": 23.42,
+      "word": " a"
+    },
+    {
+      "start": 23.42,
+      "end": 23.58,
+      "word": " regra"
+    },
+    {
+      "start": 23.58,
+      "end": 23.86,
+      "word": " anterior."
+    },
+    {
+      "start": 24.18,
+      "end": 24.22,
+      "word": " E"
+    },
+    {
+      "start": 24.22,
+      "end": 24.32,
+      "word": " aí"
+    },
+    {
+      "start": 24.32,
+      "end": 24.42,
+      "word": " tem"
+    },
+    {
+      "start": 24.42,
+      "end": 24.52,
+      "word": " um"
+    },
+    {
+      "start": 24.52,
+      "end": 24.62,
+      "word": " dado"
+    },
+    {
+      "start": 24.62,
+      "end": 24.82,
+      "word": " que"
+    },
+    {
+      "start": 24.82,
+      "end": 24.94,
+      "word": " chama"
+    },
+    {
+      "start": 24.94,
+      "end": 25.34,
+      "word": " atenção,"
+    },
+    {
+      "start": 25.44,
+      "end": 25.48,
+      "word": " quer"
+    },
+    {
+      "start": 25.48,
+      "end": 25.56,
+      "word": " que"
+    },
+    {
+      "start": 25.56,
+      "end": 25.62,
+      "word": " você"
+    },
+    {
+      "start": 25.62,
+      "end": 25.76,
+      "word": " peça"
+    },
+    {
+      "start": 25.76,
+      "end": 26.02,
+      "word": " atenção"
+    },
+    {
+      "start": 26.02,
+      "end": 26.32,
+      "word": " nisso."
+    },
+    {
+      "start": 26.32,
+      "end": 27.06,
+      "word": " Na"
+    },
+    {
+      "start": 27.06,
+      "end": 27.24,
+      "word": " última"
+    },
+    {
+      "start": 27.24,
+      "end": 27.62,
+      "word": " eleição,"
+    },
+    {
+      "start": 27.82,
+      "end": 27.9,
+      "word": " o"
+    },
+    {
+      "start": 27.9,
+      "end": 28.08,
+      "word": " Lula"
+    },
+    {
+      "start": 28.08,
+      "end": 28.34,
+      "word": " ganhou"
+    },
+    {
+      "start": 28.34,
+      "end": 28.46,
+      "word": " nos"
+    },
+    {
+      "start": 28.46,
+      "end": 28.88,
+      "word": " presídios"
+    },
+    {
+      "start": 28.88,
+      "end": 29.0,
+      "word": " com"
+    },
+    {
+      "start": 29.0,
+      "end": 29.14,
+      "word": " mais"
+    },
+    {
+      "start": 29.14,
+      "end": 29.24,
+      "word": " de"
+    },
+    {
+      "start": 29.24,
+      "end": 29.68,
+      "word": " 80"
+    },
+    {
+      "start": 29.68,
+      "end": 30.08,
+      "word": "%"
+    },
+    {
+      "start": 30.08,
+      "end": 30.34,
+      "word": " dos"
+    },
+    {
+      "start": 30.34,
+      "end": 30.72,
+      "word": " votos,"
+    },
+    {
+      "start": 30.76,
+      "end": 30.9,
+      "word": " contra"
+    },
+    {
+      "start": 30.9,
+      "end": 31.22,
+      "word": " 15"
+    },
+    {
+      "start": 31.22,
+      "end": 31.66,
+      "word": "%"
+    },
+    {
+      "start": 31.66,
+      "end": 31.88,
+      "word": " do"
+    },
+    {
+      "start": 31.88,
+      "end": 32.36,
+      "word": " Bolsonaro."
+    },
+    {
+      "start": 33.02,
+      "end": 33.34,
+      "word": " Isso"
+    },
+    {
+      "start": 33.34,
+      "end": 33.88,
+      "word": " mostra"
+    },
+    {
+      "start": 33.88,
+      "end": 34.12,
+      "word": " algum"
+    },
+    {
+      "start": 34.12,
+      "end": 34.5,
+      "word": " manobra,"
+    },
+    {
+      "start": 34.64,
+      "end": 34.72,
+      "word": " não"
+    },
+    {
+      "start": 34.72,
+      "end": 35.02,
+      "word": " sei,"
+    },
+    {
+      "start": 35.2,
+      "end": 35.34,
+      "word": " só"
+    },
+    {
+      "start": 35.34,
+      "end": 35.46,
+      "word": " tá"
+    },
+    {
+      "start": 35.46,
+      "end": 35.82,
+      "word": " trazendo"
+    },
+    {
+      "start": 35.82,
+      "end": 35.94,
+      "word": " um"
+    },
+    {
+      "start": 35.94,
+      "end": 36.14,
+      "word": " dado,"
+    },
+    {
+      "start": 36.28,
+      "end": 36.34,
+      "word": " uma"
+    },
+    {
+      "start": 36.34,
+      "end": 36.64,
+      "word": " informação"
+    },
+    {
+      "start": 36.64,
+      "end": 37.02,
+      "word": " aqui."
+    },
+    {
+      "start": 37.44,
+      "end": 37.52,
+      "word": " A"
+    },
+    {
+      "start": 37.52,
+      "end": 37.88,
+      "word": " decisão"
+    },
+    {
+      "start": 37.88,
+      "end": 37.94,
+      "word": " do"
+    },
+    {
+      "start": 37.94,
+      "end": 38.3,
+      "word": " TSE"
+    },
+    {
+      "start": 38.3,
+      "end": 38.58,
+      "word": " é"
+    },
+    {
+      "start": 38.58,
+      "end": 39.14,
+      "word": " jurídica,"
+    },
+    {
+      "start": 39.2,
+      "end": 39.26,
+      "word": " mas"
+    },
+    {
+      "start": 39.26,
+      "end": 39.34,
+      "word": " a"
+    },
+    {
+      "start": 39.34,
+      "end": 39.62,
+      "word": " discussão"
+    },
+    {
+      "start": 39.62,
+      "end": 39.76,
+      "word": " que"
+    },
+    {
+      "start": 39.76,
+      "end": 39.84,
+      "word": " é"
+    },
+    {
+      "start": 39.84,
+      "end": 40.12,
+      "word": " outra,"
+    },
+    {
+      "start": 40.48,
+      "end": 40.6,
+      "word": " uma"
+    },
+    {
+      "start": 40.6,
+      "end": 40.88,
+      "word": " regra"
+    },
+    {
+      "start": 40.88,
+      "end": 41.4,
+      "word": " aprovada"
+    },
+    {
+      "start": 41.4,
+      "end": 41.56,
+      "word": " no"
+    },
+    {
+      "start": 41.56,
+      "end": 42.2,
+      "word": " Congresso,"
+    },
+    {
+      "start": 42.48,
+      "end": 42.64,
+      "word": " pelo"
+    },
+    {
+      "start": 42.64,
+      "end": 43.0,
+      "word": " Congresso"
+    },
+    {
+      "start": 43.0,
+      "end": 43.52,
+      "word": " deveria"
+    },
+    {
+      "start": 43.52,
+      "end": 43.8,
+      "word": " ou"
+    },
+    {
+      "start": 43.8,
+      "end": 43.98,
+      "word": " não"
+    },
+    {
+      "start": 43.98,
+      "end": 44.28,
+      "word": " valer"
+    },
+    {
+      "start": 44.28,
+      "end": 44.46,
+      "word": " nessa"
+    },
+    {
+      "start": 44.46,
+      "end": 44.8,
+      "word": " eleição?"
+    },
+    {
+      "start": 45.24,
+      "end": 45.24,
+      "word": " Por"
+    },
+    {
+      "start": 45.24,
+      "end": 45.44,
+      "word": " mim,"
+    },
+    {
+      "start": 45.54,
+      "end": 45.62,
+      "word": " eu"
+    },
+    {
+      "start": 45.62,
+      "end": 45.8,
+      "word": " acho"
+    },
+    {
+      "start": 45.8,
+      "end": 45.86,
+      "word": " que"
+    },
+    {
+      "start": 45.86,
+      "end": 46.26,
+      "word": " deveria."
+    },
+    {
+      "start": 46.54,
+      "end": 46.6,
+      "word": " E"
+    },
+    {
+      "start": 46.6,
+      "end": 46.72,
+      "word": " isso"
+    },
+    {
+      "start": 46.72,
+      "end": 47.18,
+      "word": " tá"
+    },
+    {
+      "start": 47.18,
+      "end": 47.48,
+      "word": " bem"
+    },
+    {
+      "start": 47.48,
+      "end": 47.82,
+      "word": " estranho"
+    },
+    {
+      "start": 47.82,
+      "end": 47.88,
+      "word": " essa"
+    },
+    {
+      "start": 47.88,
+      "end": 48.14,
+      "word": " informação,"
+    },
+    {
+      "start": 48.42,
+      "end": 48.5,
+      "word": " né?"
+    }
+  ]
+}

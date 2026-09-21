@@ -1,0 +1,196 @@
+TRANSCRIPT — MACHINE GENERATED
+Story ID: NWS-202609211446
+Source: https://www.instagram.com/reel/Ddi7PIlxRaj/
+Engine: faster-whisper small (local fallback because API secret is not configured in this repo)
+
+EDITORIAL GUIDANCE
+Brazil political fact-check carousel about voting by provisional detainees, the TSE ruling, Constitution art. 16 annuality, Andre Mendonca pedido de vista, unanimity, Lei Antifaccao/Lei 15.358/2026, and the relevant congressional vote. Use the source transcript before editorial conclusions; neutral factual tone; draft only, not approved or published.
+
+FULL TEXT
+O Brasil é o país que anda para trás mesmo, não tem jeito, viu? TSE decidiu que presos provisórios agora vão poder votar nessa eleição desse ano. E aqui tem um detalhe importante, o Congresso aprova o Mano Barrega e pedindo o voto de quem estava preso provisoriamente. Só que TSE decidiu agora que essa mudança não poderá valer agora, porque a lei foi aprovada a menos de um ano da eleição, né? Resultado, em 2026, continua a regra anterior. E aí tem um dado que chama atenção, quer que você peça atenção nisso. Na última eleição, o Lula ganhou nos presídios com mais de 80% dos votos, contra 15% do Bolsonaro. Isso mostra algum manobra, não sei, só tá trazendo um dado, uma informação aqui. A decisão do TSE é jurídica, mas a discussão que é outra, uma regra aprovada no Congresso, pelo Congresso deveria ou não valer nessa eleição? Por mim, eu acho que deveria. E isso tá bem estranho essa informação, né?
+
+SEGMENTS
+[0000.00–0002.32] O Brasil é o país que anda para trás mesmo, não tem jeito, viu?
+[0002.54–0007.70] TSE decidiu que presos provisórios agora vão poder votar nessa eleição desse ano.
+[0007.78–0010.20] E aqui tem um detalhe importante, o Congresso aprova o Mano Barrega
+[0010.20–0012.72] e pedindo o voto de quem estava preso provisoriamente.
+[0013.06–0016.84] Só que TSE decidiu agora que essa mudança não poderá valer agora,
+[0017.12–0020.88] porque a lei foi aprovada a menos de um ano da eleição, né?
+[0021.42–0023.86] Resultado, em 2026, continua a regra anterior.
+[0024.18–0026.32] E aí tem um dado que chama atenção, quer que você peça atenção nisso.
+[0026.32–0030.72] Na última eleição, o Lula ganhou nos presídios com mais de 80% dos votos,
+[0030.76–0032.36] contra 15% do Bolsonaro.
+[0033.02–0037.02] Isso mostra algum manobra, não sei, só tá trazendo um dado, uma informação aqui.
+[0037.44–0040.12] A decisão do TSE é jurídica, mas a discussão que é outra,
+[0040.48–0044.80] uma regra aprovada no Congresso, pelo Congresso deveria ou não valer nessa eleição?
+[0045.24–0046.26] Por mim, eu acho que deveria.
+[0046.54–0048.50] E isso tá bem estranho essa informação, né?
+
+WORDS
+[0000.00–0000.18] O
+[0000.18–0000.36] Brasil
+[0000.36–0000.60] é
+[0000.60–0000.60] o
+[0000.60–0000.80] país
+[0000.80–0000.98] que
+[0000.98–0001.10] anda
+[0001.10–0001.24] para
+[0001.24–0001.50] trás
+[0001.50–0001.64] mesmo,
+[0001.72–0001.86] não
+[0001.86–0001.94] tem
+[0001.94–0002.18] jeito,
+[0002.32–0002.32] viu?
+[0002.54–0002.80] TSE
+[0002.80–0003.28] decidiu
+[0003.28–0003.44] que
+[0003.44–0003.90] presos
+[0003.90–0004.50] provisórios
+[0004.50–0004.86] agora
+[0004.86–0005.24] vão
+[0005.24–0005.60] poder
+[0005.60–0006.36] votar
+[0006.36–0006.70] nessa
+[0006.70–0007.02] eleição
+[0007.02–0007.32] desse
+[0007.32–0007.70] ano.
+[0007.78–0007.80] E
+[0007.80–0007.90] aqui
+[0007.90–0007.98] tem
+[0007.98–0008.04] um
+[0008.04–0008.18] detalhe
+[0008.18–0008.64] importante,
+[0008.90–0009.00] o
+[0009.00–0009.30] Congresso
+[0009.30–0009.58] aprova
+[0009.58–0009.70] o
+[0009.70–0009.84] Mano
+[0009.84–0010.20] Barrega
+[0010.20–0010.54] e
+[0010.54–0010.84] pedindo
+[0010.84–0010.96] o
+[0010.96–0011.20] voto
+[0011.20–0011.32] de
+[0011.32–0011.50] quem
+[0011.50–0011.70] estava
+[0011.70–0012.02] preso
+[0012.02–0012.72] provisoriamente.
+[0013.06–0013.20] Só
+[0013.20–0013.30] que
+[0013.30–0013.56] TSE
+[0013.56–0014.04] decidiu
+[0014.04–0014.36] agora
+[0014.36–0014.88] que
+[0014.88–0015.02] essa
+[0015.02–0015.38] mudança
+[0015.38–0015.58] não
+[0015.58–0015.92] poderá
+[0015.92–0016.20] valer
+[0016.20–0016.84] agora,
+[0017.12–0017.30] porque
+[0017.30–0017.44] a
+[0017.44–0017.56] lei
+[0017.56–0017.90] foi
+[0017.90–0018.36] aprovada
+[0018.36–0018.74] a
+[0018.74–0018.96] menos
+[0018.96–0019.22] de
+[0019.22–0019.32] um
+[0019.32–0019.54] ano
+[0019.54–0019.70] da
+[0019.70–0020.68] eleição,
+[0020.76–0020.88] né?
+[0021.42–0021.86] Resultado,
+[0022.00–0022.06] em
+[0022.06–0022.80] 2026,
+[0022.92–0023.20] continua
+[0023.20–0023.42] a
+[0023.42–0023.58] regra
+[0023.58–0023.86] anterior.
+[0024.18–0024.22] E
+[0024.22–0024.32] aí
+[0024.32–0024.42] tem
+[0024.42–0024.52] um
+[0024.52–0024.62] dado
+[0024.62–0024.82] que
+[0024.82–0024.94] chama
+[0024.94–0025.34] atenção,
+[0025.44–0025.48] quer
+[0025.48–0025.56] que
+[0025.56–0025.62] você
+[0025.62–0025.76] peça
+[0025.76–0026.02] atenção
+[0026.02–0026.32] nisso.
+[0026.32–0027.06] Na
+[0027.06–0027.24] última
+[0027.24–0027.62] eleição,
+[0027.82–0027.90] o
+[0027.90–0028.08] Lula
+[0028.08–0028.34] ganhou
+[0028.34–0028.46] nos
+[0028.46–0028.88] presídios
+[0028.88–0029.00] com
+[0029.00–0029.14] mais
+[0029.14–0029.24] de
+[0029.24–0029.68] 80
+[0029.68–0030.08] %
+[0030.08–0030.34] dos
+[0030.34–0030.72] votos,
+[0030.76–0030.90] contra
+[0030.90–0031.22] 15
+[0031.22–0031.66] %
+[0031.66–0031.88] do
+[0031.88–0032.36] Bolsonaro.
+[0033.02–0033.34] Isso
+[0033.34–0033.88] mostra
+[0033.88–0034.12] algum
+[0034.12–0034.50] manobra,
+[0034.64–0034.72] não
+[0034.72–0035.02] sei,
+[0035.20–0035.34] só
+[0035.34–0035.46] tá
+[0035.46–0035.82] trazendo
+[0035.82–0035.94] um
+[0035.94–0036.14] dado,
+[0036.28–0036.34] uma
+[0036.34–0036.64] informação
+[0036.64–0037.02] aqui.
+[0037.44–0037.52] A
+[0037.52–0037.88] decisão
+[0037.88–0037.94] do
+[0037.94–0038.30] TSE
+[0038.30–0038.58] é
+[0038.58–0039.14] jurídica,
+[0039.20–0039.26] mas
+[0039.26–0039.34] a
+[0039.34–0039.62] discussão
+[0039.62–0039.76] que
+[0039.76–0039.84] é
+[0039.84–0040.12] outra,
+[0040.48–0040.60] uma
+[0040.60–0040.88] regra
+[0040.88–0041.40] aprovada
+[0041.40–0041.56] no
+[0041.56–0042.20] Congresso,
+[0042.48–0042.64] pelo
+[0042.64–0043.00] Congresso
+[0043.00–0043.52] deveria
+[0043.52–0043.80] ou
+[0043.80–0043.98] não
+[0043.98–0044.28] valer
+[0044.28–0044.46] nessa
+[0044.46–0044.80] eleição?
+[0045.24–0045.24] Por
+[0045.24–0045.44] mim,
+[0045.54–0045.62] eu
+[0045.62–0045.80] acho
+[0045.80–0045.86] que
+[0045.86–0046.26] deveria.
+[0046.54–0046.60] E
+[0046.60–0046.72] isso
+[0046.72–0047.18] tá
+[0047.18–0047.48] bem
+[0047.48–0047.82] estranho
+[0047.82–0047.88] essa
+[0047.88–0048.14] informação,
+[0048.42–0048.50] né?
