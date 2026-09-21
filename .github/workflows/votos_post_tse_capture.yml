@@ -13,7 +13,7 @@ permissions:
 jobs:
   capture:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout existing pipeline branch
         uses: actions/checkout@v4
@@ -27,32 +27,26 @@ jobs:
           python-version: "3.11"
           cache: pip
 
-      - name: Install ffmpeg
+      - name: Install ffmpeg and existing pipeline dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
+          pip install -r requirements.txt
+          pip install faster-whisper
 
-      - name: Install existing pipeline dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run existing capture components with timestamped Whisper output
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Download with existing pipeline and transcribe locally with timestamps
         run: |
           python - <<'PY'
           import json
-          import os
           import tempfile
           from pathlib import Path
 
-          from openai import OpenAI
+          from faster_whisper import WhisperModel
           from transcribe_reel import download_audio
-          from capture import analyze_content
 
           url = "https://www.instagram.com/reel/Ddi7PIlxRaj/"
           story_id = "NWS-202609211446"
-          notes = (
+          editorial_notes = (
               "Brazil political fact-check carousel about voting by provisional detainees, "
               "the TSE ruling, Constitution art. 16 annuality, Andre Mendonca pedido de vista, "
               "unanimity, Lei Antifaccao/Lei 15.358/2026, and the relevant congressional vote. "
@@ -65,55 +59,78 @@ jobs:
 
           with tempfile.TemporaryDirectory() as tmp:
               audio = download_audio(url, tmp)
-              client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-              with open(audio, "rb") as f:
-                  tr = client.audio.transcriptions.create(
-                      model="whisper-1",
-                      file=f,
-                      language="pt",
-                      response_format="verbose_json",
-                      timestamp_granularities=["segment", "word"],
-                      temperature=0,
-                  )
+              model = WhisperModel("small", device="cpu", compute_type="int8")
+              segments_iter, info = model.transcribe(
+                  audio,
+                  language="pt",
+                  beam_size=5,
+                  vad_filter=True,
+                  word_timestamps=True,
+                  condition_on_previous_text=True,
+              )
+              segments = list(segments_iter)
 
-          raw = tr.model_dump() if hasattr(tr, "model_dump") else tr
-          segments = raw.get("segments", []) if isinstance(raw, dict) else []
-          words = raw.get("words", []) if isinstance(raw, dict) else []
-          text = raw.get("text", "") if isinstance(raw, dict) else str(tr)
+          seg_json = []
+          words_json = []
+          full_parts = []
+          for seg in segments:
+              full_parts.append(seg.text.strip())
+              seg_words = []
+              for w in (seg.words or []):
+                  item = {"start": w.start, "end": w.end, "word": w.word}
+                  seg_words.append(item)
+                  words_json.append(item)
+              seg_json.append({
+                  "start": seg.start,
+                  "end": seg.end,
+                  "text": seg.text.strip(),
+                  "words": seg_words,
+              })
 
-          analysis = analyze_content(text, url, notes)
+          text = " ".join(x for x in full_parts if x).strip()
+          payload = {
+              "source_url": url,
+              "story_id": story_id,
+              "engine": "faster-whisper small (local GitHub Actions fallback)",
+              "language": getattr(info, "language", "pt"),
+              "language_probability": getattr(info, "language_probability", None),
+              "duration": getattr(info, "duration", None),
+              "editorial_notes": editorial_notes,
+              "text": text,
+              "segments": seg_json,
+              "words": words_json,
+          }
 
           (out / f"{story_id}_Ddi7PIlxRaj_verbose.json").write_text(
-              json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8"
-          )
-          (out / f"{story_id}_Ddi7PIlxRaj_editorial.json").write_text(
-              json.dumps(
-                  {"source_url": url, "story_id": story_id, "editorial_notes": notes, "analysis": analysis},
-                  ensure_ascii=False,
-                  indent=2,
-              ),
-              encoding="utf-8",
+              json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
           )
 
           lines = [
-              "TRANSCRIPT — MACHINE GENERATED (Whisper-1)",
+              "TRANSCRIPT — MACHINE GENERATED",
               f"Story ID: {story_id}",
               f"Source: {url}",
+              "Engine: faster-whisper small (local fallback because API secret is not configured in this repo)",
+              "",
+              "EDITORIAL GUIDANCE",
+              editorial_notes,
               "",
               "FULL TEXT",
               text,
               "",
               "SEGMENTS",
           ]
-          for s in segments:
-              lines.append(f"[{float(s.get('start',0)):07.2f}–{float(s.get('end',0)):07.2f}] {str(s.get('text','')).strip()}")
+          for s in seg_json:
+              lines.append(f"[{float(s['start']):07.2f}–{float(s['end']):07.2f}] {s['text']}")
           lines += ["", "WORDS"]
-          for w in words:
-              lines.append(f"[{float(w.get('start',0)):07.2f}–{float(w.get('end',0)):07.2f}] {str(w.get('word','')).strip()}")
-          (out / f"{story_id}_Ddi7PIlxRaj_timestamped.txt").write_text("\n".join(lines), encoding="utf-8")
+          for w in words_json:
+              lines.append(f"[{float(w['start']):07.2f}–{float(w['end']):07.2f}] {w['word'].strip()}")
+
+          (out / f"{story_id}_Ddi7PIlxRaj_timestamped.txt").write_text(
+              "\n".join(lines), encoding="utf-8"
+          )
           PY
 
-      - name: Commit timestamped capture to project branch
+      - name: Commit timestamped transcript to project branch
         run: |
           git config user.name "content-capture-bot"
           git config user.email "content-capture-bot@users.noreply.github.com"
